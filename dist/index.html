@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/051c0509.main.css">
+    <link rel="stylesheet" href="styles/d7e1c53a.main.css">
   </head>
   <body ng-app="reardenTestApp">
     <!--[if lt IE 7]>
@@ -23,7 +23,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="container">
+      <div class="masthead">
+        <div class="logo">Logo</div>
+        <div class="topright"></div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/clients">Clients</a></li>
+        </ul>
+      </div>
+      
+      <div class="content" ng-view=""></div>
+    </div>
+      
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
