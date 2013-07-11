@@ -1,0 +1,38 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+}
+.masthead {
+  border: dashed;
+  height: 100px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border: solid;
+}
+
+
+.nav {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  border: dashed;
+  float: left;
+}
+
+.content {
+  position: relative;
+  float: right;
+  width: 500px;
+  text-align: right;
+}
