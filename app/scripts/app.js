@@ -3,7 +3,7 @@
 angular.module('reardenTestApp', [])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/', {
+      .when('/main', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -16,7 +16,7 @@ angular.module('reardenTestApp', [])
         controller: 'MainCtrl'
       })
       .otherwise({
-        redirectTo: '404.html'
+        redirectTo: '/main'
       });
     $locationProvider.html5Mode(true);
   }]);
