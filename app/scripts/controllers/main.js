@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('reardenTestApp')
-  .controller('MainCtrl', ['$scope', '$route',function ($scope, $route) {
+  .controller('MainCtrl', ['$scope', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
