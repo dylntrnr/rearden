@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('reardenTestApp', [])
-  .config(['$routeProvider', function ($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/main', {
         templateUrl: 'views/main.html',
@@ -18,4 +18,5 @@ angular.module('reardenTestApp', [])
       .otherwise({
         redirectTo: '/main'
       });
+    $locationProvider.hashPrefix('!');
   }]);
